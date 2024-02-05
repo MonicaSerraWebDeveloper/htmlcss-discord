@@ -44,7 +44,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 13px;
     color: #7289da;
 }
 
@@ -59,7 +59,7 @@ p {
 
 .col-25-footer ul li {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     list-style: none;
     padding-bottom: 10px;
 }
@@ -125,6 +125,11 @@ p {
     padding: 10px 20px;
 }
 
+.btn-footer {
+    font-size: 10px;
+    padding: 8px 10px;
+}
+
 /*---------------------
         ICON
 -----------------------*/
@@ -151,7 +156,7 @@ header > .container {
     align-items: center;
 }
 
-.header-menu img {
+.logo {
     height: 25px;
 }
 
@@ -301,6 +306,7 @@ footer {
 .footer-container {
     display: flex;
     border-bottom: 1px solid #7289da;
+    padding-bottom: 30px;
 }
 
 .pink-div {
@@ -318,14 +324,14 @@ footer {
 }
 
 .language img {
-    height: 15px;
+    height: 12px;
 }
 
 select {
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
 }
 
@@ -354,17 +360,17 @@ select {
 
 .second-footer {
     padding-top: 20px;
+    padding-bottom: 50px;
     font-size: 13px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    background-color: #7effd4;
     padding: 16px 0; 
 }
 
 .footer-item {
-    background-color: #ffb6c1;
     padding: 2px 8px;
 }
+
