@@ -29,17 +29,17 @@ body {
 -----------------------*/
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
 }
 
 h2 {
-    font-size: 46px;
+    font-size: 36px;
     color: #23272a;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 26px;
     color: #23272a;
 }
 
@@ -47,9 +47,26 @@ p {
     font-size: 16px;
     color: #23272a; 
 }
+
+.hero p {
+    color: #fff;
+}
+
 /*---------------------
         LAYOUT
 -----------------------*/
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .col-20 {
     width: 20%;
@@ -59,6 +76,10 @@ p {
     width: 50%;
 }
 
+.col-100 {
+    width: 100%;
+}
+
 /*---------------------
         BUTTONS
 -----------------------*/
@@ -66,7 +87,6 @@ p {
 .btn {
     color: #23272a;
     text-decoration: none;
-    padding: 5px 10px;
     border-radius: 50px;
 }
 
@@ -74,24 +94,38 @@ p {
     background-color: #fff;
 }
 
-.btn-header {
-    font-size: 14px;
+.btn-black {
+    background-color: #23272a;
+    color: #fff;
 }
+
+.btn-header {
+    font-size: 12px;
+    padding: 8px 10px;
+}
+
+.btn-hero {
+    padding: 10px 20px;
+}
+
+/*---------------------
+        ICON
+-----------------------*/
+
+.fa-down-long {
+    font-size: 12px;
+    padding: 0 8px;
+}
+
 /*---------------------
         HEADER
 -----------------------*/
 
 header {
-    background-color: #3161e0;
+    background-color: #255ee9;
     padding: 10px 0;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 header > .container {  
     display: flex;
@@ -102,10 +136,6 @@ header > .container {
 
 .header-menu img {
     height: 25px;
-}
-
-nav {
-    flex-grow: 0.5;
 }
 
 nav ul  {
@@ -129,32 +159,44 @@ nav ul li a {
     padding: 10px 0;
 }
 
+.col-left {
+    text-align: right;
+}
 
 /*---------------------
         HERO
 -----------------------*/
 
-.container-main {
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
+.section-hero {
+    background-image: url('./img/jumbo.png');
+    background-size: cover;
 }
 
-.container-blue {
-    background-color: #0d008b;
+.hero-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: center;
-    border-bottom: 3px solid #add8e6;
 }
 
 .hero {
-    width: 800px;
-    min-height: 340px;
-    background-color: #ee82ef;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero > * {
+    padding-bottom: 30px;
 }
 
 /*---------------------
-    GENERAL CONTENT
+    DOUBLE SECTION
 -----------------------*/
+
+.double-column-container {
+    padding: 40px 0;
+    justify-content: center;
+}
 
 .box {
     min-height: 440px;
@@ -170,20 +212,24 @@ nav ul li a {
     width: 40%;
 }
 
+/*---------------------
+    SECOND SECTION
+-----------------------*/
+
+.center-container {
+    padding-top: 40pX;
+    padding-bottom: 40pX;
+}
+
 .box-green {
     background-color: #228b23;
     width: 100%;
     min-height: 650px;
 }
 
-.container-grey {
+.bg-grey {
     background-color: #d3d3d3;
 }
-
-.container-grey > .container-main{
-    flex-direction: row-reverse;
-}
-
 
 /*---------------------
         FOOTER
@@ -196,7 +242,7 @@ footer {
 .first-footer {
     padding-top: 5px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #fff;
+ 
 }
 
 .footer-container {
