@@ -99,6 +99,12 @@ p {
     color: #fff;
 }
 
+.btn-lilla {
+    background-color: #8ea1e1;
+    color: #fff;
+
+}
+
 .btn-header {
     font-size: 12px;
     padding: 8px 10px;
@@ -199,7 +205,6 @@ nav ul li a {
 }
 
 .box {
-    min-height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,14 +236,38 @@ nav ul li a {
 -----------------------*/
 
 .center-container {
-    padding-top: 40pX;
-    padding-bottom: 40pX;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
-.box-green {
-    background-color: #228b23;
+.box-large {
     width: 100%;
-    min-height: 650px;
+    text-align: center;
+}
+
+.text-container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.cta-container {
+}
+
+.cta-container h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('./img/stars.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 500px;
+}
+
+.text-container > * {
+    padding-bottom: 30px;
+}
+
+.box-large > * {
+    padding-bottom: 10px;
 }
 
 .bg-grey {
