@@ -200,16 +200,30 @@ nav ul li a {
 
 .box {
     min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.box-blue {
-    background-color: #1e90ff;
+.box > * {
+    padding-bottom: 30px;
+}
+
+.box-60 {
     width: 60%;
 }
 
-.box-pink {
-    background-color: #ffc0cc;
+.box-40 {
     width: 40%;
+}
+
+.box-right {
+    padding: 0 70px 0 100px;
+}
+
+.box-left {
+    padding: 0 100px 0 70px;
+
 }
 
 /*---------------------
@@ -228,7 +242,7 @@ nav ul li a {
 }
 
 .bg-grey {
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
 /*---------------------
@@ -242,7 +256,6 @@ footer {
 .first-footer {
     padding-top: 5px;
     padding-bottom: 30px;
- 
 }
 
 .footer-container {
