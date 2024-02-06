@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*---------------------
         DEBUG
 -----------------------*/
@@ -223,11 +227,19 @@ nav ul li a {
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .box > * {
     padding-bottom: 30px;
+}
+
+.box-right {
+    padding: 0px 70px 0 100px;
+}
+
+.box-left {
+    padding: 0 100px 0 70px;
 }
 
 .box-60 {
@@ -236,15 +248,7 @@ nav ul li a {
 
 .box-40 {
     width: 40%;
-}
-
-.box-right {
-    padding: 0 70px 0 100px;
-}
-
-.box-left {
-    padding: 0 100px 0 70px;
-
+    padding-top: 30px;
 }
 
 /*---------------------
